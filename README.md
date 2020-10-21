@@ -223,6 +223,3 @@ Feedstock Maintainers
 * [@orbeckst](https://github.com/orbeckst/)
 * [@richardjgowers](https://github.com/richardjgowers/)
 
-
-<!-- dummy commit to enable rerendering -->
-
