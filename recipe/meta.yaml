@@ -1,6 +1,6 @@
 {% set name = "pytng" %}
-{% set version = "0.2.2a2" %}
-{% set sha256 = "bf8736008ae7e4f5e5fe64a98f1e31aa21b092bf02d565573f6bd9ddbb81fe43" %}
+{% set version = "0.2.2a3" %}
+{% set sha256 = "7632ca13bc8af9287a461f042b43a1f33b57ed4cd996ee272522bfd89ae9b982" %}
 
 
 package:
