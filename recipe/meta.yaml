@@ -1,6 +1,6 @@
 {% set name = "pytng" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "268822cd8bb305ddcf89781eff61bef19a82a62832d9c557c6047c004f569d30" %}
+{% set version = "0.2.3" %}
+{% set sha256 = "4601285d9fce9fe1b6b7e1d313ce3324799073edc91b2b09c8ffd78147ec52a8" %}
 
 
 package:
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [win and py2k]
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 
