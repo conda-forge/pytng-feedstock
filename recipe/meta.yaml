@@ -1,6 +1,6 @@
 {% set name = "pytng" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "4601285d9fce9fe1b6b7e1d313ce3324799073edc91b2b09c8ffd78147ec52a8" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "f563f9ea260ca8c8e17b3bcf9458bae35aedd5c58e1c5ac4dfff77a1e036506e" %}
 
 
 package:
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }} 
+  sha256: {{ sha256 }}
 
 build:
   skip: true  # [win and py2k]
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
-    
+
   host:
     - python
     - pip
@@ -45,7 +45,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Python library to read TNG files'
+  summary: A Python library to read TNG files
 
   description: |
     PyTNG is a Python library to read TNG files.  The TNG format is used by
