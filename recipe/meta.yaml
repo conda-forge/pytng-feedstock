@@ -30,6 +30,7 @@ requirements:
 
   host:
     - python
+    - setuptools
     - pip
     - cython
     - numpy
