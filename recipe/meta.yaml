@@ -14,7 +14,7 @@ source:
 build:
   skip: true  # [win and py2k]
   skip: true  # [py<311]
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 
